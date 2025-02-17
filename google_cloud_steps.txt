@@ -1,0 +1,40 @@
+Google Cloud Speech-to-Text API ka use karne ke liye tumhe kuch steps follow karne honge. Main tumhe poora step-by-step process samjha deta hoon, jo tumhe pehle Google Cloud pe setup karna hoga aur phir JavaScript code mein API ko kaise call karna hai, yeh bhi bataunga.
+
+Step-by-Step Guide to Use Google Cloud Speech-to-Text API:
+Step 1: Google Cloud Account Create and Setup
+Create a Google Cloud Account:
+
+Agar tumhare paas Google Cloud account nahi hai, toh Google Cloud Console pe jaake ek account create karo.
+Naya account create karte waqt tumhe 90 din ke liye $300 ka free credit milega jo tum testing ke liye use kar sakte ho.
+Create a New Project:
+
+Google Cloud Console mein login karo.
+Navigation Menu (top-left corner) se "Select a Project" par click karo aur "New Project" select karo.
+Ek project name do aur create kar do.
+Step 2: Enable Speech-to-Text API
+Enable Speech-to-Text API:
+Google Cloud Console ke Navigation Menu se "APIs & Services" par jao aur "Library" par click karo.
+Google Cloud Speech-to-Text API ko search karo.
+API ko select karke Enable par click karo.
+Step 3: Create a Service Account
+Service Account Create Karo:
+
+"Navigation Menu" se IAM & Admin > Service Accounts par jao.
+"Create Service Account" button par click karo.
+Service account ka naam do aur "Create and Continue" karo.
+Assign Role:
+
+Role section mein, "Project" > "Editor" role select karo. Ye role allow karega ki tumhara service account APIs ko access kar sake.
+Continue par click karke service account create kar lo.
+Create and Download Key:
+
+Service account create hone ke baad, tumhe ek JSON Key generate karni hogi.
+Actions menu se "Manage Keys" par click karo, aur Add Key > Create New Key select karo.
+JSON format select karke key download kar lo. Ye key file tumhare project ke liye important hai.
+Step 4: Install Google Cloud SDK in Your Local Machine
+Agar tum local environment mein kaam kar rahe ho, toh tumhe Google Cloud SDK ya gcloud CLI install karna hoga.
+
+Google Cloud SDK Download karo:
+Google Cloud SDK download aur install karo.
+Authenticate karo:
+SDK install hone ke baad, command prompt ya terminal open karo aur login command run karo:
